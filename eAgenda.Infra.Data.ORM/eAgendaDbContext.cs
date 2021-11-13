@@ -12,7 +12,7 @@ namespace eAgenda.Infra.Data.ORM
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
-                .UseSqlServer(@"Data Source=(localdb)\MsSqlLocalDb;Initial Catalog=eAgendaWeb;Integrated Security=True");
+                .UseSqlServer(@"Data Source=(localdb)\MsSqlLocalDb;Initial Catalog=agendaDB;Integrated Security=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
